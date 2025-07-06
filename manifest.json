@@ -1,7 +1,7 @@
 {
     "name": "RisiBank",
     "description": "Integrate RisiBank on any website. While typing on discord, whatsapp web, etc, press alt+; to add a media",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "manifest_version": 3,
     "background": {
         "service_worker": "background.js"

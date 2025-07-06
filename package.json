@@ -1,6 +1,6 @@
 {
     "name": "risibank-chrome-extension",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "description": "Type [Alt] + [;] to integrate RisiBank on any website 💦",
     "main": "src/index.js",
     "scripts": {
@@ -26,6 +26,6 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
-        "risibank-web-api": "^0.0.1"
+        "risibank-web-api": "^1.2.0"
     }
 }

@@ -1,5 +1,5 @@
-import { rules, defaultConfig, callbacks } from "./config";
 import { RisiBank } from "risibank-web-api";
+import { callbacks, defaultConfig, rules } from "./config";
 
 (() => {
     // Check if already init
@@ -12,8 +12,6 @@ import { RisiBank } from "risibank-web-api";
     tracer.style.width = '0';
     tracer.style.height = '0';
     document.body.appendChild(tracer);
-
-    const RisiBankClient = new RisiBank();
 
     // Listen for keyboard event listener
     document.addEventListener('keydown', event => {
@@ -35,7 +33,7 @@ import { RisiBank } from "risibank-web-api";
         // Identify callback
         const callback = callbacks[config.mode];
 
-        RisiBankClient.activate({
+        RisiBank.activate({
             ...RisiBank.Defaults.Modal.Dark,
             onSelectMedia: callback(document.activeElement),
         });
