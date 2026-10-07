@@ -6,7 +6,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["scripting", "clipboardRead", "clipboardWrite"],
+  "permissions": ["scripting"],
   "host_permissions": ["*://*/*"],
   "action": {
     "default_icon": {
