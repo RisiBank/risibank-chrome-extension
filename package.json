@@ -4,7 +4,7 @@
     "description": "Type [Alt] + [;] to integrate RisiBank on any website 💦",
     "main": "src/index.js",
     "scripts": {
-        "build": "rm -rf dist && ./node_modules/.bin/gulp && zip -r dist/extension.zip dist/extension"
+        "build": "rm -rf dist && ./node_modules/.bin/gulp && cd dist/extension && zip -r ../extension.zip ."
     },
     "repository": {
         "type": "git",
